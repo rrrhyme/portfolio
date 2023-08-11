@@ -1,0 +1,48 @@
+img {
+	width: 400px;
+	height: 350px;
+	border-radius: 5%;
+}
+
+.block--about {
+	--padding-bottom: 25rem;
+	padding: 6rem 1.5rem var(--padding-bottom);
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20rem 3rem 5rem;
+	gap: 2rem;
+	border: 2px solid red;
+}
+
+.about__header {
+	text-align: center;
+}
+
+.about-me {
+	font-size: 1.8rem;
+	color: rgb(29, 131, 233);
+}
+
+.about__sub-heading {
+	font-size: 2.8rem;
+}
+
+.about__tagline {
+	font-size: 2rem;
+	font-family: "Poppins";
+}
+
+@media screen and (min-width: 768px) {
+	.about {
+		flex-direction: row;
+		align-items: start;
+	}
+
+	.about__header {
+		text-align: start;
+	}
+}
