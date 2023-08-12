@@ -4,6 +4,8 @@
 	--color-headings: #1b0760;
 	--color-body: #b5a8ea;
 	--color-border: #ccc;
+	--color-title: #1d83e9;
+	--font-size-title: 2rem;
 }
 
 *,
@@ -12,12 +14,6 @@
 	box-sizing: border-box;
 	margin: 0;
 }
-/* 
-div,
-nav,
-header {
-	border: 1px solid red;
-} */
 
 /* Typograpy */
 html {
@@ -87,4 +83,9 @@ li {
 .container {
 	max-width: 1140px;
 	margin: 0 auto;
+}
+
+.block {
+	--padding-bottom: 30rem;
+	padding: 6rem 1.5rem var(--padding-bottom);
 }

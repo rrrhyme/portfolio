@@ -1,8 +1,6 @@
 .block--hero {
 	background-image: linear-gradient(to right, #5746bd, #3d51b6, #2b7395);
 	position: relative;
-	--padding-bottom: 30rem;
-	padding: 6rem 1.5rem var(--padding-bottom);
 }
 
 .wave {

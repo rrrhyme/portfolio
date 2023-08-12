@@ -3,7 +3,7 @@ import "./Hero.css";
 function Hero(props) {
 	return (
 		<div>
-			<section className="block--hero">
+			<section className="block block--hero">
 				<div className="container">
 					<div className="hero-main grid grid--1x2">
 						<img

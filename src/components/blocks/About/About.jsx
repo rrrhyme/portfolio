@@ -3,7 +3,7 @@ import "./About.css";
 function About(props) {
 	return (
 		<>
-			<section className="block--about">
+			<section className="block block--about">
 				<div className="container">
 					<div className="about">
 						<img
@@ -12,7 +12,7 @@ function About(props) {
 						/>
 						<div className="about__header">
 							<h2 className="about-me">About Me</h2>
-							<h3 className="about__sub-heading">
+							<h3 className="about__heading">
 								20 years of experience in writing.
 							</h3>
 							<p className="about__tagline">
