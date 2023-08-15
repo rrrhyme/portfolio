@@ -1,11 +1,18 @@
 .nav {
-	background-image: linear-gradient(to right, #5746bd, #3d51b6, #2b7395);
-	border-bottom: 1px solid grey;
-	display: flex;
-	justify-content: space-between;
+	position: relative;
+	z-index: 1000;
+}
+
+.nav__header {
 	align-items: center;
+	background-image: linear-gradient(to right, #f85aa4, #ff587c, #ff6b5d);
+	box-shadow: 0 3px 6px #0b0b0b1a;
+	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	padding: 0.5rem;
+	position: fixed;
+	width: 100%;
 }
 
 .nav__list.sm {

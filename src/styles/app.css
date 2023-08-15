@@ -86,6 +86,34 @@ li {
 }
 
 .block {
-	--padding-bottom: 30rem;
+	--padding-bottom: 15rem;
 	padding: 6rem 1.5rem var(--padding-bottom);
+}
+
+/* Icon */
+
+.icon-container {
+	border-radius: 100%;
+	width: 78px;
+	height: 78px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 0 1px #ffefef;
+}
+
+/* Scroll bar */
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #8e8e8e;
+	border-radius: 20px;
 }

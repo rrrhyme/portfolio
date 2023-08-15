@@ -92,6 +92,41 @@ const accordionItem = [
 			},
 		],
 	},
+	{
+		title: "Sample 3 ",
+		section:
+			"Section 3 Section Section Section Section Section Section Section Section",
+		subArray: [
+			{
+				key: "Before",
+				content: (
+					<>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+							eligendi, perferendis animi ex ullam aut nobis facilis,
+							reprehenderit suscipit commodi eveniet harum mollitia beatae!
+							Molestias magnam laborum, exercitationem laboriosam dolorum odit
+							in dicta vitae accusantium accusamus! Officia a dolorum ad tempora
+							accusamus porro nisi. Aut mollitia quidem quae fuga optio! bla bla
+							bla bla bla bla bla bla bala bla balbalbalba lba bla bla bab ab
+							lab aba lba b al bal ba
+						</p>
+					</>
+				),
+			},
+			{
+				key: "After",
+				content: (
+					<>
+						<p>
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro,
+							inventore.
+						</p>
+					</>
+				),
+			},
+		],
+	},
 ];
 
 function Accordion(props) {
