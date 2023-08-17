@@ -1,9 +1,10 @@
 import React, { useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 function SvgHero(props) {
-	let svgRef = useRef();
+	let svgRef = useRef(null);
 
 	useLayoutEffect(() => {
+		const el = svgRef.current;
 		const ctx = gsap.context(() => {
 			let tl2 = gsap.timeline({
 				defaults: { duration: 0.9, ease: "back.out(1.7)", opacity: 0 },
@@ -28,7 +29,7 @@ function SvgHero(props) {
 				.from(".Rectangle-4", { scaleX: 0 }, "-=.7")
 				.from(".Button-Left", { scaleX: 0 }, "-=.8")
 				.from(".Button-Right", { scaleX: 0 }, "-=.9");
-		}, svgRef);
+		}, el);
 
 		return () => ctx.revert();
 	}, []);

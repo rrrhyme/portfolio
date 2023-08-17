@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+
 function About(props) {
 	return (
 		<>
@@ -7,7 +8,8 @@ function About(props) {
 				<div className="container">
 					<div className="about">
 						<img
-							src={process.env.PUBLIC_URL + "/assets/images/about.jpg"}
+							className="about__image"
+							src={process.env.PUBLIC_URL + "/assets/images/about.webp"}
 							alt="About"
 						/>
 						<div className="about__header">

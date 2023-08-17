@@ -37,7 +37,7 @@
 }
 
 .hero__tagline {
-	font-size: 2.3rem;
+	font-size: 2rem;
 	color: #b9c3cf;
 }
 
@@ -61,8 +61,6 @@
 
 .arrow-svg {
 	position: absolute;
-	animation: name duration timing-function delay iteration-count direction
-		fill-mode;
 	animation-name: arrow-move, arrow-swing;
 	animation-duration: 3s, 2s;
 	animation-timing-function: ease, linear;
@@ -119,4 +117,9 @@
 	.svg-container {
 		order: 2;
 	}
+}
+
+.bad {
+	border: 1px solid red;
+	height: 30px;
 }

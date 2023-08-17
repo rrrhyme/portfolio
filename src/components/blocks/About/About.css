@@ -1,12 +1,8 @@
-img {
+.about__image {
 	width: 400px;
 	height: 350px;
 	border-radius: 5%;
 }
-
-/* .block--about {
-	border: 2px solid red;
-} */
 
 .about {
 	display: flex;
@@ -31,7 +27,7 @@ img {
 
 .about__tagline {
 	font-size: 2rem;
-	font-family: "Poppins";
+	font-family: "Poppins", sans-serif;
 }
 
 @media screen and (min-width: 768px) {
