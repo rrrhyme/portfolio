@@ -132,7 +132,7 @@ const accordionItem = [
 
 function Accordion(props) {
 	const [openIndices, setOpenIndices] = useState([]);
-	const [tempDisable, setTempDisable] = useState(true);
+	const tempDisable = true;
 
 	const handleToggleAccordion = (index) => {
 		if (!tempDisable) {

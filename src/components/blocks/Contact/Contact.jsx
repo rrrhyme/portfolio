@@ -14,7 +14,11 @@ function Contact(props) {
 					<div className="contacts contact--linkedin">
 						<span className="icon-container ">
 							<svg className="icon--contacts">
-								<use xlinkHref="/assets/images/sprites.svg#linkedin"></use>
+								<use
+									xlinkHref={
+										process.env.PUBLIC_URL +
+										"/assets/images/sprites.svg#linkedin"
+									}></use>
 							</svg>
 						</span>
 						<a
@@ -27,7 +31,10 @@ function Contact(props) {
 					<div className="contacts contact--email">
 						<span className="icon-container ">
 							<svg className="icon--contacts">
-								<use xlinkHref="/assets/images/sprites.svg#email"></use>
+								<use
+									xlinkHref={
+										process.env.PUBLIC_URL + "/assets/images/sprites.svg#email"
+									}></use>
 							</svg>
 						</span>
 						<a

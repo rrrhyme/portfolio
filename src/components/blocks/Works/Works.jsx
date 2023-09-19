@@ -19,7 +19,7 @@ function Works(props) {
 					<div className="card-work">
 						<img
 							className="coming-soon"
-							src="/assets/images/coming-soon.png"
+							src={process.env.PUBLIC_URL + "/assets/images/coming-soon.png"}
 							alt="coming-soon"
 						/>
 						<Accordion />
