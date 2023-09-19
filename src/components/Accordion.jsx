@@ -52,7 +52,8 @@ const accordionItem = [
 					<>
 						<p>
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro,
-							inventore.
+							inventore inventore. inventore. inventore. inventore. inventore.
+							inventore. inventore..
 						</p>
 					</>
 				),
@@ -131,23 +132,27 @@ const accordionItem = [
 
 function Accordion(props) {
 	const [openIndices, setOpenIndices] = useState([]);
+	const [tempDisable, setTempDisable] = useState(true);
+
 	const handleToggleAccordion = (index) => {
-		if (openIndices.includes(index)) {
-			setOpenIndices(openIndices.filter((i) => i !== index));
-		} else setOpenIndices([...openIndices, index]);
+		if (!tempDisable) {
+			if (openIndices.includes(index)) {
+				setOpenIndices(openIndices.filter((i) => i !== index));
+			} else setOpenIndices([...openIndices, index]);
+		}
 	};
 	return (
-		<>
+		<div className="card--filter">
 			{accordionItem.map((item, index) => {
 				return (
-					<section key={index}>
+					<section className="accordion-section" key={index}>
 						<header>
 							<h3 className="accordion__header">{item.title}</h3>
 						</header>
 						<div className="accordion">
 							<div
 								onClick={() => handleToggleAccordion(index)}
-								className="accordion__section">
+								className="accordion__container">
 								<header className="section__heading">
 									<h3 className="section__header">{item.section}</h3>
 								</header>
@@ -181,7 +186,7 @@ function Accordion(props) {
 					</section>
 				);
 			})}
-		</>
+		</div>
 	);
 }
 

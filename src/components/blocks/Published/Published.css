@@ -1,0 +1,23 @@
+.published {
+	background-color: #fff;
+	overflow: hidden;
+	word-wrap: break-word;
+}
+
+.published__headings {
+	font-size: 2.2rem;
+}
+
+.published__list {
+	padding: 1rem;
+	grid-row: 3;
+}
+
+.published__item {
+	font-size: 1.8rem;
+}
+
+.published__container {
+	display: grid;
+	grid-template-columns: 90% 10%;
+}

@@ -1,6 +1,9 @@
 .accordion {
-	border: 1px solid #e3e2dd;
+	border: 1px solid var(--color-border);
 	padding: 2rem 1.5rem;
+}
+.accordion-section {
+	width: 100%;
 }
 
 .accordion__header {
@@ -8,12 +11,12 @@
 	margin-top: 2.5rem;
 }
 
-.accordion__section {
+.accordion__container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 1px solid #e3e2dd;
-	cursor: pointer;
+	border-bottom: 1px solid var(--color-border);
+	cursor: default;
 }
 
 .section__heading {
@@ -29,19 +32,19 @@
 .accordion__content {
 	max-height: 0;
 	overflow: hidden;
-	transition: all 0.3s ease-out;
+	transition: all 0.8s ease-out;
 }
 
 .accordion__content.show {
 	height: auto;
-	max-height: 900px;
-	transition: all 0.8s ease-out;
+	max-height: 9999px;
+	transition: all 8s ease-out;
 }
 
 .accordion__tagline {
 	margin: 1rem;
 	padding: 1rem 1.5rem;
-	border: 1px solid #e3e2dd;
+	border: 1px solid var(--color-border);
 	box-shadow: 0 0 3px #2b2b2b;
 }
 
@@ -54,4 +57,19 @@
 
 .accordion__sub-heading {
 	font-weight: 600;
+}
+
+@media screen and (min-width: 810px) {
+	.accordion-section {
+		width: 100%;
+	}
+}
+
+.card--filter {
+	filter: blur(1rem);
+}
+
+.icon-accordion {
+	width: 40px;
+	height: 40px;
 }

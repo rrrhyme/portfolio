@@ -3,7 +3,7 @@
 :root {
 	--color-headings: #1b0760;
 	--color-body: #b5a8ea;
-	--color-border: #ccc;
+	--color-border: #e3e2dd;
 	--color-title: #1d83e9;
 	--font-size-title: 2rem;
 }
@@ -66,7 +66,7 @@ li {
 	display: grid;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 810px) {
 	.grid--1x2 {
 		grid-template-columns: repeat(2, 1fr);
 	}

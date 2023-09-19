@@ -47,19 +47,21 @@ function Navigation(props) {
 							</li>
 						))}
 					</ul>
-					{isMenuOpen && (
-						<ul className="nav__list sm">
-							{listItem.map((item) => (
-								<li key={item.id} className="nav__item">
-									<a
-										href={`#${item.id}`}
-										onClick={(e) => handleNavigate(e, item.id)}>
-										{item.text}
-									</a>
-								</li>
-							))}
-						</ul>
-					)}
+					{/* Window < 768 */}
+					<ul
+						className={`nav__list sm ${
+							isMenuOpen ? "nav--show" : "nav--close"
+						}`}>
+						{listItem.map((item) => (
+							<li key={item.id} className="nav__item">
+								<a
+									href={`#${item.id}`}
+									onClick={(e) => handleNavigate(e, item.id)}>
+									{item.text}
+								</a>
+							</li>
+						))}
+					</ul>
 				</nav>
 			</header>
 		</>
