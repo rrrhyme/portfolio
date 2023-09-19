@@ -28,7 +28,7 @@ function Navigation(props) {
 		<>
 			<header className="nav">
 				<nav className="nav__header">
-					<span className="nav__brand">logo</span>
+					<span className="nav__brand">Rhyme</span>
 					<svg
 						onClick={handleToggle}
 						className={`nav__toggler ${isMenuOpen ? "nav--extended" : ""}`}

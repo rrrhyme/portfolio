@@ -33,10 +33,15 @@
 	border-bottom: none;
 }
 
-.nav__item > a,
-.nav__brand {
+.nav__item > a {
 	color: #d2d2ff;
 	transition: 0.3s;
+}
+
+.nav__brand {
+	letter-spacing: 0.5rem;
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
 .nav__item > a:hover {
