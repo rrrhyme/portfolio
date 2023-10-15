@@ -35,7 +35,6 @@
 
 .nav__item > a {
 	color: #d2d2ff;
-	transition: 0.3s;
 }
 
 .nav__brand {
@@ -84,8 +83,17 @@
 	}
 
 	.nav__item {
-		border: 0;
+		border-bottom: 3px solid transparent;
 		margin: 0 1.6rem;
+		transition: border-bottom 0.3s ease;
+	}
+
+	.nav__text.active {
+		color: #e8ffee;
+	}
+
+	.nav__item.active {
+		border-bottom: 3px solid #000;
 	}
 
 	.nav__list.md {

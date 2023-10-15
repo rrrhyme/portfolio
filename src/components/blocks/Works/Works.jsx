@@ -10,8 +10,8 @@ function Works(props) {
 				<div className="headings">
 					<h2 className="works">Works</h2>
 					<p className="works__tagline">
-						I'm still working on my personal projects. You can look at my
-						published writing samples!
+						I'm still working on my personal projects. In the meantime, check
+						some of my published works!
 					</p>
 				</div>
 				<div className="personal-projects-container works-content-container">
@@ -36,7 +36,7 @@ function Works(props) {
 				</div>
 				<div className="published-container works-content-container">
 					<p className="published__tagline">Published Writing Samples</p>
-					<div className="card-work">
+					<div className="card-work overflow--effect">
 						<Published />
 					</div>
 				</div>

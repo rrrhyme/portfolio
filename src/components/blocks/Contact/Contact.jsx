@@ -3,7 +3,7 @@ import "./Contact.css";
 
 function Contact(props) {
 	return (
-		<section id="contact" className="block block--contacts">
+		<section className="block block--contacts">
 			<div className="container">
 				<h2 className="contacts__heading">Contacts</h2>
 				<h2 className="contacts__sub-heading">

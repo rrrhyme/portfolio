@@ -48,6 +48,11 @@
 	overflow: hidden;
 }
 
+.card-work.overflow--effect {
+	height: auto;
+	overflow: visible;
+}
+
 .personal__tagline {
 	margin-left: 2.4rem;
 	margin-top: 2rem;

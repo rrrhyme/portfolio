@@ -10,14 +10,26 @@
 
 .published__list {
 	padding: 1rem;
-	grid-row: 3;
+	list-style-type: disc;
+	list-style-position: inside;
 }
 
 .published__item {
 	font-size: 1.8rem;
+	padding-bottom: 1.1rem;
+	margin-bottom: 1.1rem;
+	border-bottom: 1px solid var(--color-border);
 }
 
-.published__container {
-	display: grid;
-	grid-template-columns: 90% 10%;
+.published__item:last-child {
+	border-bottom: none;
+}
+
+.published__item > a {
+	color: #d81759;
+	transition: 0.3s;
+}
+
+.published__item > a:hover {
+	color: blue;
 }

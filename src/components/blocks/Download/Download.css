@@ -1,0 +1,35 @@
+.block--downloads {
+	background-color: #f9f9f9;
+}
+
+.download__headline {
+	text-align: center;
+	color: #333366;
+}
+
+.here {
+	font-style: italic;
+	text-decoration: underline;
+	color: #ff6b5d;
+}
+.download__content {
+	padding: 15rem 3rem 15rem;
+}
+
+.download__button {
+	padding: 1rem 2rem;
+	border-radius: 50px;
+	outline: none;
+	transition: 0.3s;
+	font-size: 1.8rem;
+	cursor: pointer;
+}
+
+.download__button:hover {
+	background-color: #ff6b5d;
+}
+
+.button {
+	text-align: center;
+	margin-top: 1.5rem;
+}

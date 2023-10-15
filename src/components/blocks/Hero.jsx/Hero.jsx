@@ -10,11 +10,15 @@ function Hero(props) {
 					<div className="hero-main">
 						<SvgHero />
 						<div className="hero__header">
-							<h1 className="hero__heading">Lorem ipsum dolor sit amet.</h1>
+							<h1 className="hero__heading">
+								Crafting <br />
+								User-Centric Experiences Through Words
+							</h1>
 							<p className="hero__tagline">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod,
-								quasi et. Hic, corrupti? At, expedita? Eveniet veritatis sit
-								obcaecati amet!
+								A seasoned UX writer with a unique twist - I began my journey in
+								the world of technical writing, and over the course of five
+								enriching years, I've found my true passion in science
+								communication within the realm of user experience.
 							</p>
 						</div>
 					</div>
