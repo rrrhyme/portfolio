@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Navigation.css";
 import { useLocation } from "react-router-dom";
 
@@ -11,7 +11,6 @@ const listItem = [
 
 function Navigation(props) {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
-	const [activeSection, setActiveSection] = useState("");
 	const location = useLocation();
 
 	const handleToggle = () => {
@@ -24,7 +23,6 @@ function Navigation(props) {
 		if (targetRef) {
 			targetRef.scrollIntoView({ behavior: "smooth" });
 			setIsMenuOpen(false);
-			setActiveSection(targetId);
 		}
 	};
 
@@ -32,26 +30,16 @@ function Navigation(props) {
 		if (location.pathname === "/contact") {
 			const filtered = list.filter((item) => item.id === "contact");
 			return filtered.map((item) => (
-				<li
-					key={item.id}
-					className={`nav__item ${activeSection === item.id ? "active" : ""}`}>
-					<a
-						className={`nav__text ${activeSection === item.id ? "active" : ""}`}
-						href={`#${item.id}`}
-						onClick={(e) => handleNavigate(e, item.id)}>
+				<li key={item.id} className="nav__item">
+					<a href={`#${item.id}`} onClick={(e) => handleNavigate(e, item.id)}>
 						{item.text}
 					</a>
 				</li>
 			));
 		} else {
 			return list.map((item) => (
-				<li
-					key={item.id}
-					className={`nav__item ${activeSection === item.id ? "active" : ""}`}>
-					<a
-						className={`nav__text ${activeSection === item.id ? "active" : ""}`}
-						href={`#${item.id}`}
-						onClick={(e) => handleNavigate(e, item.id)}>
+				<li key={item.id} className="nav__item">
+					<a href={`#${item.id}`} onClick={(e) => handleNavigate(e, item.id)}>
 						{item.text}
 					</a>
 				</li>

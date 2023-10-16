@@ -6,7 +6,7 @@ import About from "./components/blocks/About/About";
 import Works from "./components/blocks/Works/Works";
 import Contact from "./components/blocks/Contact/Contact";
 import Download from "./components/blocks/Download/Download";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 // import Published from "./components/blocks/Published/Published";
 
 function MainContent() {
@@ -27,6 +27,8 @@ function App(props) {
 			<Routes>
 				<Route path="/contact" element={<Contact />} />
 				<Route path="/" element={<MainContent />} />
+				<Route path="/" element={<MainContent />} />
+				<Route path="*" element={<Navigate to="/" />} />
 			</Routes>
 			{/* <Published /> */}
 		</div>

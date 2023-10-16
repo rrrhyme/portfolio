@@ -23,10 +23,14 @@
 	transition: 0.3s;
 	font-size: 1.8rem;
 	cursor: pointer;
+	border: 1px solid #000;
 }
 
 .download__button:hover {
+	border-color: #ff6b5d;
 	background-color: #ff6b5d;
+	color: #fff;
+	letter-spacing: 1px;
 }
 
 .button {

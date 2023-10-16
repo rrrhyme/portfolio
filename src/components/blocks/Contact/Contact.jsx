@@ -1,15 +1,14 @@
 import React from "react";
 import "./Contact.css";
+import { Link } from "react-router-dom";
 
 function Contact(props) {
 	return (
 		<section className="block block--contacts">
 			<div className="container">
-				<h2 className="contacts__heading">Contacts</h2>
-				<h2 className="contacts__sub-heading">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quis.
-				</h2>
-				<p className="contacts__paragraph">Lorem ipsum dolor sit amet.</p>
+				<h2 className="contacts__heading">Contact</h2>
+				<h2 className="contacts__sub-heading">Stay in touch!</h2>
+				<p className="contacts__paragraph">Contact Information</p>
 				<div className="contact__section">
 					<div className="contacts contact--linkedin">
 						<span className="icon-container ">
@@ -24,7 +23,7 @@ function Contact(props) {
 						<a
 							target="_blank"
 							rel="noopener noreferrer"
-							href="https://www.linkedin.com/in/ronnel-javier/">
+							href="https://www.linkedin.com/in/rcinoceno/">
 							Linkedin
 						</a>
 					</div>
@@ -41,9 +40,15 @@ function Contact(props) {
 							target="_blank"
 							rel="noopener noreferrer"
 							href="https://mail.google.com/mail/u/0/#inbox?compose=new">
-							demo@gmail.com
+							djchiriko@icloud.com
 						</a>
 					</div>
+					<div className="tooltip"></div>
+				</div>
+				<div className="btn-container">
+					<Link to="/" className="homeBtn">
+						Go to Home Page
+					</Link>
 				</div>
 			</div>
 		</section>
