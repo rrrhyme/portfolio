@@ -26,8 +26,8 @@ function App(props) {
 			<Navigation />
 			<Routes>
 				<Route path="/contact" element={<Contact />} />
-				<Route path="/portfolio" element={<MainContent />} />
-				<Route path="*" element={<Navigate to="/portfolio" />} />
+				<Route path="*" element={<Navigate to="/" />} />
+				<Route path="/" element={<MainContent />} />
 			</Routes>
 			{/* <Published /> */}
 		</div>
