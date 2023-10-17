@@ -46,7 +46,7 @@ function Contact(props) {
 					<div className="tooltip"></div>
 				</div>
 				<div className="btn-container">
-					<Link to="/" className="homeBtn">
+					<Link to="/portfolio" className="homeBtn">
 						Go to Home Page
 					</Link>
 				</div>
