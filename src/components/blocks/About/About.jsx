@@ -15,7 +15,7 @@ function About(props) {
 						<div className="about__header">
 							<h2 className="about-me">About Me</h2>
 							<h3 className="about__heading">
-								20 years of experience in writing.
+								Connecting Complex Knowledge to User-Friendly Design.
 							</h3>
 							<p className="about__tagline">
 								A UX writer with a background in science communication sets me
